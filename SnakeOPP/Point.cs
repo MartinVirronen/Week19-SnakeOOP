@@ -43,7 +43,10 @@ namespace SnakeOPP
             {
                 y = y + offset;
             }
+            
+
         }
+
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
@@ -58,6 +61,8 @@ namespace SnakeOPP
         public bool IsHit(Point p)
         {
             return p.x == x && p.y == y;
+            Random rnd = new Random();
+            Console.ForegroundColor = (ConsoleColor)rnd.Next(0, 16);
         }
 
         // ****** $

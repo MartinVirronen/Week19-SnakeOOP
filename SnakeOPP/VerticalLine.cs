@@ -13,8 +13,10 @@ namespace SnakeOPP
             {
                 Point p = new Point(x, i, symb);
                 pointList.Add(p);
+                Console.ForegroundColor = ConsoleColor.Red;
+
             }
-        }
+        } 
 
     }
 }

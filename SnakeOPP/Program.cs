@@ -13,13 +13,16 @@ namespace SnakeOPP
             Walls walls = new Walls (80, 25);
             walls.Draw();
 
-            Point snakeTail = new Point(15, 15, 's');
+            Point snakeTail = new Point(15, 15, '=');
             Snake snake = new Snake(snakeTail, 5, Direction.RIGHT);
             snake.Draw();
+            Console.ForegroundColor = ConsoleColor.Blue;
 
-            FoodGenerator foodGenerator = new FoodGenerator(80, 25, '$');
+            FoodGenerator foodGenerator = new FoodGenerator(80, 25, '0');
             Point food = foodGenerator.GenerateFood();
             food.Draw();
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+
 
             while (true)
             {
@@ -56,7 +59,7 @@ namespace SnakeOPP
         {
             int xOffset = 25;
             int yOffset = 8;
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.SetCursorPosition(xOffset, yOffset++);
             WriteText("========================", xOffset, yOffset++);
             WriteText("        MÄNG LÄBI!       ", xOffset + 1, yOffset++);

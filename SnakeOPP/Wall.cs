@@ -15,14 +15,17 @@ namespace SnakeOPP
             VerticalLine left = new VerticalLine(0, 25, 0, '!');
             HorizontaLine bottom = new HorizontaLine(0, 80, 25, '$');
             VerticalLine right = new VerticalLine(0, 25, 80, '!');
+            HorizontaLine obstacle = new HorizontaLine(15, 35, 10, '%');
+            HorizontaLine obstacle1 = new HorizontaLine(3, 5, 10, '%');
 
-            VerticalLine obstacle = new VerticalLine(10, 20, 50, '%');
+
 
             wallList.Add(top);
             wallList.Add(left);
             wallList.Add(bottom);
             wallList.Add(right);
             wallList.Add(obstacle);
+            wallList.Add(obstacle1);
         }
         public void Draw()
         {
@@ -41,6 +44,7 @@ namespace SnakeOPP
                 }
             }
             return false;
+            Console.ForegroundColor = ConsoleColor.Red;
         }
     }
 }

@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\SnakeOPP\\SnakeOPP\\SnakeOPP.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\Week19-SnakeOOP\\SnakeOPP\\SnakeOPP.csproj",
       "projectName": "SnakeOPP",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\SnakeOPP\\SnakeOPP\\SnakeOPP.csproj",
+      "projectPath": "C:\\Users\\opilane\\source\\repos\\Week19-SnakeOOP\\SnakeOPP\\SnakeOPP.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\repos\\SnakeOPP\\SnakeOPP\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\source\\repos\\Week19-SnakeOOP\\SnakeOPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.416\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
       }
     }
   }
