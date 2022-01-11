@@ -9,6 +9,7 @@ namespace SnakeOPP
         static void Main(string[] args)
         {
             int score = 0;
+            int x = 150;
             //drawing a game field frame
             Walls walls = new Walls (80, 25);
             walls.Draw();
@@ -36,7 +37,11 @@ namespace SnakeOPP
                     food = foodGenerator.GenerateFood();
                     food.Draw();
                     score++;
+                    x = x - 10;
                 }
+                
+                
+                
                 else
                 {
                     snake.Move();
@@ -47,8 +52,9 @@ namespace SnakeOPP
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKeys(key.Key);
                 }
-                Thread.Sleep(300);
-
+                Thread.Sleep(x);
+                
+               
             }
             string str_score = Convert.ToString(score);
             WriteGameOver(str_score);

@@ -23,8 +23,10 @@ namespace SnakeOPP
         {
             int x = rnd.Next(2, mapWidth - 2);
             int y = rnd.Next(2, mapHeight - 2);
+            Console.Beep();
             return new Point(x, y, symb);
             Console.ForegroundColor = ConsoleColor.Red;
+             
 
         }
     }
